@@ -74,11 +74,7 @@
          max-width: 6.75rem;
      }
  
-     /* banner */ 
-     .banner_wrapper .social-icon a img{
-         width:2.125rem;
-         height:2.125rem; 
-     }
+
  
      /* accordian */ 
     
@@ -88,6 +84,12 @@
 
      .accordion-body .nav-link{
          font-size: .8rem;
+     }
+
+     .foot-bottom{
+         margin-top: 10px;
+         margin-bottom: 10px;
+      
      }
  }
 
