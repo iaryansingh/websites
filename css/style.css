@@ -169,6 +169,10 @@ a:hover{
     font-size: 80%;
 }
 
+.header_wrapper{
+    padding-bottom: 20px;
+}
+
             
 /* 2 Navbar */
 .header_wrapper .navbar{
@@ -206,32 +210,37 @@ a:hover{
 }
 
 
-/*4.1 About  */
-
-
-
 /*4.3 portfolio  */
-.portfolio_wrapper .nav-link{
-    color:black;
+
+.accordion-body .nav-link{
+    color:var(--primary-color);
     font-weight: 600;
-    font-size:1.125rem;
+    font-size: 1rem;
     letter-spacing:.0625rem;
     text-align: center;
 }
 
-.portfolio_wrapper .portfolio-img{
+.accordion-body .nav-link.active,
+.accordion-body .show>.nav-link{
+    background-color:var(--primary-color);
+}
+
+/* .portfolio_wrapper .portfolio-img{
     width:100%;
     min-height: 23.75rem;
     height:100%;
     position:relative;
     border-radius: .9375rem;
     cursor:pointer;
-} 
+}  */
+
+ .portfolio-img img {
+    border-radius: 0.8rem;
+}
 
 
 
-
-
+/* ---------footer-------- */
 
 .center{
     display: flex;
@@ -249,11 +258,11 @@ a:hover{
     background-color:var(--dark-color);
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
 }
 
-
-
-/* ---------footer-------- */
 
 .footer-1-col{
 
@@ -274,6 +283,12 @@ a:hover{
     color: black;
 }
 
+.footer-1-col p{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
 .footer-1-col img {
     margin-bottom: 30px;
     max-width: 75%;
@@ -283,6 +298,11 @@ a:hover{
     background-color: white;
     display: flex;
     justify-content: center;
+    transition: .2 ease-in;
+}
+
+.footer-1-col img:hover{
+    border: 2px solid #fff;
 }
 
 .footer-1-col ul li{
