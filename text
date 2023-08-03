@@ -1,3 +1,5 @@
+cd /home/adapttive/my-websites
+
 git remote add origin https://github.com/iaryansingh/websites.git
 git branch -M main
 git push -u origin main
