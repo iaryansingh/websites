@@ -1,0 +1,9 @@
+cd /home/adapttive/my-websites
+
+git remote add origin https://github.com/iaryansingh/websites.git
+git add .
+git commit -m "message"
+git push -u origin main
+
+
+pwd: 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

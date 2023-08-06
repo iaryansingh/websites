@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple checkout experience</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- ----font awesome----- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" class="rel">
+    <link rel="stylesheet" href="utils.css" class="rel">
+    <link rel="stylesheet" href="mobile.css" class="rel">
+</head>
+<body>
+    <div class="container-main">
+        <nav class=" flexbox1">
+            <div class="passage">
+                <div class="center"><h4>Cart</h4>
+                    <div class="#"> <span class="dot"></span></div> 
+                </div>
+        
+                <div class="center"><h4>Shopping</h4>
+                    <div class="#"> <span class="dot dot2"></span></div>
+                </div>
+        
+                <div class="center"><h4 >Payment</h4>
+                    <div class="dot-select"><span ></span></div>
+                 </div>
+                <div class="center"><h4>Done</h4>
+                    <div class="#"><span class="dot"></span>
+                </div>  
+            </div>  
+        </nav>
+        
+        
+        <div class="dot-line">
+                
+        </div>
+        
+        
+         <div class="page-brake">  
+        
+            <div class="container1">
+                <div class="summary-head">
+                    <h4> Summary of your order</h4>
+                    <i class="fa-solid fa-plus" class="menu-icon" onclick="menutoggle()" alt="more details"></i>
+                </div>
+               <div class="#" id="MenuItems">
+                    <div class="product" >
+                        <div class="img-left">
+                            <img src=" image1/img1.jpg" alt="image not found">
+                        </div>
+                        <div class="product-detail"  >
+                            <h5> <a href="#" >Lorem ipsum dolor sit amet.</a> </h5>
+                            <div class="product-summary">
+                                <div class="element-1">Color: blue</div>  
+                                <div class="element-2">Size:2</div>
+                                <div class="element-3">₹499</div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="product">
+                        <div class="img-left">
+                            <img src=" image1/img1.jpg" alt="image not found">
+                        </div>
+
+                        <div class="product-detail" >
+                            <h5>  <a href="##" > Lorem ipsum dolor sit amet.</a> </h5>
+                            <div class="product-summary">
+                                <div class="element-1">Color:blue</div>  
+                                <div class="element-2">Size:2</div>
+                                <div class="element-3">₹499</div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               
+                <hr>
+        
+                <div class="shipping">
+                    <h5> Shipping Methods</h5>
+                    <div class="shipping-free"> <h5>Free</h5></div>
+                </div>
+                <hr>
+                <div class="tax">
+                    <h5>Taxes</h5>
+                    <h5 class="tax-price">₹180</h5>
+                </div>
+        
+                <hr>
+            </div>
+        
+            <div class="container2">
+                <div class="payment-head">
+                    <h4> Payment Methods</h4>
+                </div>
+            
+                <div class="payment-mode">
+                    <div class="mode-1">
+                        <input type="radio" id="mode-1" class="radio" name="payment-mode">
+                     <label for="mode-1">
+                        <img src=" image1/master.svg" alt="#">
+                        <img src=" image1/visa.svg" alt="#">
+                        <img src=" image1/rupay.svg" alt="#">
+                    </label>  
+                    </div>
+                    <div class="mode-2">
+                        <input type="radio" id="mode-2" class="radio" name="payment-mode">
+                        <label for="mode-2">
+                            <img src=" image1/upi.svg" alt="#">
+                        </label>
+                    </div>
+                </div>
+        
+                <div class="card-box">
+                    <div class="card-holder">
+                        <label for="card-name"> <h5>Name on Card</h5> </label>
+                        <input type="text" name="nameoncard" id="card-name" class=" name-area" placeholder="Name on card">
+                    </div>
+        
+                    <div class="card-number">
+                        <label for="cardnumber"> <h5>Card Number</h5> </label>
+                        <input type="text" name="nameoncard" id="cardnumber"  placeholder="0000" >
+        
+                        <input type="text" name="nameoncard" id="cardnumber" placeholder="0000" >
+        
+                        <input type="text" name="nameoncard" id="cardnumber" placeholder="0000" >
+                    </div>
+        
+                    <div class="card-back">
+                        <div class="date">
+                            <label for="date"> <h5>Expire Date</h5> </label>
+                          <input type="date" name="expiredate"  id="date">
+                        </div>
+                        <div class="cvv">
+                         <label for="cvv"> <h5>CVV</h5> </label>
+                          <input type="text" name="cvv" id="cvv" placeholder="0000">
+                        </div>
+                        <div class="cardsave"> 
+                        <input type="checkbox" name="cardsave" id="cardsave">
+                        <label for="cardsave"> <h5> Save this card</h5></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+        
+        <hr >
+
+        <div class="foot-box">
+            <h4>Total Amount: ₹998</h4>
+        
+            <div class="side-buttons font-4">
+                <div class="btn">
+                    <button class="btn-1"> <a href="">Back to Shipping</a></button>
+                </div>
+        
+                <div class="btn">
+                    <button class="btn-2"> <a href="">Proceed to Payments </a></button>
+                </div>
+            </div>
+        </div>  
+    </div>
+  
+
+    <!-- --------------js for toggle menu------------- -->
+   <script>
+
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "200px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "200px")
+        {
+            MenuItems.style.maxHeight = "450px"
+            MenuItems.style.display = "block"
+            
+
+           
+
+        }
+        else
+        {
+          MenuItems.style.maxHeight = "200px"
+          MenuItems.style.display = "none"
+        }
+    }
+   </script>
+
+</body>
+</html>
